@@ -11,7 +11,7 @@ class App extends Component {
     }
   }
   componentDidMount() {
-    axios.get('http://127.0.0.1:8000/api/authors')
+    axios.get('http://127.0.0.1:8000/authors')
       .then(response => {
         this.setState({
           'authors': response.data

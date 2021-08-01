@@ -2,10 +2,10 @@ const AuthorItem = ({author}) => {
   return (
     <tr>
       <td>
-        {author.first_name}
+        {author.url}
       </td>
       <td>
-        {author.last_name}
+        {author.name}
       </td>
       <td>
         {author.birthday_year}
@@ -18,13 +18,13 @@ const AuthorList = ({authors}) => {
   return (
     <table>
       <th>
-        Firstname
+        id
       </th>
       <th>
-        Lastname
+        name
       </th>
       <th>
-        Birthday year
+        birth
       </th>
       {authors.map((author) => <AuthorItem author={author}/>)}
     </table>
